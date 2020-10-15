@@ -1,4 +1,6 @@
 Dokumentation Baustellenkamera --> created by Christio alias Ramba-Zamba
+Hardware: Raspberry Pi Gen.1 mit 5MP Kamera
+Betriebssystem: Raspian
 
 Folgende Bedingungen müssen erfüllt sein, dass die Baustellenkamera funktioniert:
 1) Kamera ist enstprechend angesschlossen
