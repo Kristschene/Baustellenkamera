@@ -6,7 +6,7 @@ Folgende Bedingungen müssen erfüllt sein, dass die Baustellenkamera funktionie
 1) Kamera ist enstprechend angesschlossen
 2) Am Desktop ist ein Ordner mit dem Namen "Baustelle" angelegt
 3) Dieser Ordner muss das Python-Skript Baustelle.py, sowie einen weiteren mit dem Namen "pics" beinhalten
-4) Das das Skript automatisch nach dem booten ausgeführt wird, muss dies in der .bashrc festgelegt sein
+4) Dass das Skript automatisch nach dem Booten ausgeführt wird, muss dies in der .bashrc festgelegt sein
 	--> Dieses File findest du wie folgt: Öffne die Shell und gib folgenden Command ein --> nano ~/.bashrc
 	--> Scrolle ganz nach unten. Folgende Zeilen müssen dort zu finden sein:  
 		echo Running on boot
