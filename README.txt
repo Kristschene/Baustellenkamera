@@ -1,12 +1,10 @@
 Dokumentation Baustellenkamera --> created by Christio alias Ramba-Zamba
-Hardware: Raspberry Pi Gen.1 mit 5MP Kamera
-Betriebssystem: Raspian
 
 Folgende Bedingungen müssen erfüllt sein, dass die Baustellenkamera funktioniert:
 1) Kamera ist enstprechend angesschlossen
 2) Am Desktop ist ein Ordner mit dem Namen "Baustelle" angelegt
-3) Dieser Ordner muss das Python-Skript Baustelle.py, sowie einen weiteren mit dem Namen "pics" beinhalten
-4) Dass das Skript automatisch nach dem Booten ausgeführt wird, muss dies in der .bashrc festgelegt sein
+3) Dieser Ordner muss das Python-Skript Baustelle.py, sowie einen weiteren Ordner mit dem Namen "pics" beinhalten
+4) Das das Skript automatisch nach dem booten ausgeführt wird, muss dies in der .bashrc festgelegt sein
 	--> Dieses File findest du wie folgt: Öffne die Shell und gib folgenden Command ein --> nano ~/.bashrc
 	--> Scrolle ganz nach unten. Folgende Zeilen müssen dort zu finden sein:  
 		echo Running on boot
@@ -17,6 +15,7 @@ Folgende Bedingungen müssen erfüllt sein, dass die Baustellenkamera funktionie
 Verändern der Fotofrequenz:
 1) Öffne das Skript Baustelle.py
 2) Verändere im Code die globale Variable "CONST_SLEEP_TIME" (Der Wert danach entspricht dem Fotointervall in Sekunden)
+3) Info: Das erste Foto wird nach 1 Minute nach Startup gemacht
 
 
 So fügst du die einzelnen Bilder in ein Video zusammen:
@@ -31,3 +30,4 @@ So fügst du die einzelnen Bilder in ein Video zusammen:
 	--> Du kannst die Bilder natürlich auch auf einen anderen PC transferieren und dort mit einem anderen Programm zusammensetzen
 	--> Ist mencoder nicht installiert wird dies in der Shell mit folgenden Command gemacht (Internet benötigt): sudo apt install mencoder 
 5) Ist das Video einmal gemacht kannst du die Bilder wieder löschen.
+6) Die Bilder bzw. das Video kannst du mit WINSCP etc. über FTP vom Raspi runterladen
