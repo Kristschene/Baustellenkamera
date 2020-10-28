@@ -25,7 +25,7 @@ So fügst du die einzelnen Bilder in ein Video zusammen:
 4) Dann öffne die Shell, navigiere vorher unbedingt zu den pics Ordner und gib folgenden Commands ein:
 	--> erstelle eine liste aller Bilder mit dem Befehl: ls *.jpg > stills.txt
 	--> schaue in das File ob die Reihenfolge der Bilder korrekt ist 
-	--> mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 -vf scale=1920:1080 -o timelapse-Baustelle.avi -mf type=jpeg:fps24 mf://@stills.txt
+	--> mencoder -nosound -ovc lavc -lavcopts vcodec=mpeg4:aspect=16/9:vbitrate=8000000 -vf scale=1920:1080 -o timelapse-Baustelle.avi -mf type=jpeg:fps=24 mf://@stills.txt
 	--> Du kannst die FPS (wie viel Bilder pro Sekunde verwendet werden sollen) mit dem Paramter im vorigen Command veränder (siehe fps24 --> z.B. ändere zu fps6 etc.) 
 	--> Du kannst die Bilder natürlich auch auf einen anderen PC transferieren und dort mit einem anderen Programm zusammensetzen
 	--> Ist mencoder nicht installiert wird dies in der Shell mit folgenden Command gemacht (Internet benötigt): sudo apt install mencoder 
